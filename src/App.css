@@ -1,0 +1,352 @@
+
+.box{
+    margin-left: 300px;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    animation: mybox 1s ease-in-out 11s forwards;
+    
+    
+}
+@keyframes mybox{
+    0%{
+        left:0px;
+    }
+    50%{
+        left: 5px;
+        
+    }
+    100%{
+        left: 0px;
+        visibility: hidden;
+        overflow: hidden;
+     
+    }
+}
+@keyframes ropeanim{
+    0%{
+        left:0px;
+    }
+    50%{
+        left: 1px;
+        
+    }
+    100%{
+        left: 0px;
+        visibility: hidden;
+        overflow: hidden;
+     
+    }
+}
+.rope{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    margin-top: 70px;
+    margin-left: 500px;
+    transform: rotate(-20deg);
+    animation: ropeanim 1s ease-in-out 12 forwards;
+}
+.fire{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 30px;
+    border-top-left-radius: 50%;
+    margin-left: 380px;
+    border-bottom-right-radius: 50%;
+    animation: fireanim 1s ease-in-out 12 forwards;
+    transform: rotate(-60deg);
+}
+.count{
+    position: absolute;
+    margin-left: 155px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 120px;
+    color: rgb(153, 38, 38);
+    animation: mycount 1s ease-in-out 12 forwards;
+}
+@keyframes mycount{
+    from{
+        font-size: 90px;
+        opacity: 0;
+    }
+    to{
+        font-size: 100px;
+        opacity: 1;
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
+@keyframes fireanim{
+    from{
+        background-image: linear-gradient(yellow,black)
+    }
+    to{
+        background-image: linear-gradient(rgb(95, 95, 24),rgb(77, 65, 65));
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
+
+/*after bomb blast*/
+.blast{
+    position: absolute;
+    background: white;
+    margin-left: 200px;
+    opacity: 0;
+    z-index: -9999;
+    animation: blastanim 2s ease-in-out 12s  forwards; 
+}
+@keyframes blastanim{
+    from{
+        width:200px;
+        height: 200px;
+        opacity: 0.4;
+    }
+    to{
+        width:700px;
+        height: 600px;
+        opacity: 1; 
+    }
+}
+.gifts{
+    height: 700px;
+    width: 750px;
+    margin-left: 250px;
+    position: absolute;
+    opacity: 0;
+    animation: giftsanim 10s ease-in-out 13s infinite;
+}
+@keyframes giftsanim{
+    0%{
+        top: -700px;
+        opacity: 0.9;
+        transform: rotate(0deg)
+    }
+    10%{
+        transform: rotate(40deg)
+    }
+    50%{
+        transform: rotate(10deg)
+    }
+    90%{
+        
+        transform: rotate(5deg)
+    }
+    100%{
+        top:700px;
+        opacity: 1;
+        transform: rotate(0deg)
+    }
+}
+.misile1{
+    height: 200px;
+    width: 150px;
+    transform: rotate(50deg);
+    opacity: 0;
+    position: absolute;
+    animation: misileanim 10s ease-in-out 13s infinite;
+}
+@keyframes misileanim{
+    0%{
+        left: -200px;
+        transform: rotate(50deg);
+        opacity: 1;
+    }
+    50%{
+        left: 1500px;
+        transform: rotate(50deg);
+        opacity: 1;
+    }
+    60%{
+        transform: rotate(-150deg);
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(-150deg);
+        opacity: 1;
+    }
+    100%{
+        left: -200px;
+        transform: rotate(-150deg);
+        opacity: 1;
+    }
+
+}
+.misile2{
+    height: 200px;
+    width: 150px;
+    transform: rotate(150deg);
+    opacity: 0;
+    position: absolute;
+    animation: misil2eanim 10s ease-in-out 13s infinite;
+}
+@keyframes misil2eanim{
+    0%{
+        bottom: -200px;
+        transform: rotate(150deg);
+        opacity: 1;
+    }
+    50%{
+        bottom: 1500px;
+        
+        opacity: 1;
+    }
+    60%{
+        
+        opacity: 1;
+    }
+    75%{
+        
+        opacity: 1;
+    }
+    100%{
+        bottom: -200px;
+        opacity: 1;
+    }
+
+}
+.baloon1{
+    height: 400px;
+    width: 350px;
+    transform: rotate(0deg);
+    opacity: 0;
+    margin-left: 900px;
+    position: absolute;
+    animation: mbaloon1eanim 15s ease-in-out 13s infinite;
+}
+
+@keyframes mbaloon1eanim{
+    0%{
+        top: -500px;
+        opacity: 1;
+    }
+    50%{
+        top: 1500px;
+        
+        opacity: 1;
+    }
+    60%{
+        
+        opacity: 1;
+    }
+    75%{
+        
+        opacity: 1;
+    }
+    100%{
+        top: -500px;
+        opacity: 1;
+    }
+
+}
+.name{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 200px;
+    font-weight: bolder;
+    font-size: 130px;
+    opacity: 0;
+    animation: nameanim 2s ease-in-out 15s infinite;
+}
+@keyframes nameanim{
+    0%{
+        font-size: 130px;
+        color: orange;
+        opacity: 1;
+    }
+    50%{
+        font-size: 150px;
+        color: yellow;
+        opacity: 1;
+    }
+    100%{
+        font-size: 130px;
+        color: orange;
+        opacity: 1;
+    }
+
+}
+
+.cake{
+    height: 300px;
+    width:200px;
+    margin-left: 750px;
+    margin-top: 200px;
+    opacity: 0;
+    position: absolute;
+    animation: cake1 5s ease-in-out 15s infinite;
+}
+@keyframes cake1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.cake2{
+    height: 300px;
+    width:200px;
+    margin-left: 100px;
+    margin-top: 200px;
+    opacity: 0;
+    position: absolute;
+    animation: cake2 5s ease-in-out 15s infinite;
+}
+@keyframes cake2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.banner{
+        height: 400px;
+        width:700px;
+        margin-left: 200px;
+        opacity: 0;
+        position: absolute;
+        animation: baner 2s ease-in-out 15s infinite;    
+}
+@keyframes baner{
+    0%{
+        top: -100px;
+        transform: rotate(20deg);
+        opacity: 1;
+    }
+    50%{
+        top: -50px; 
+        transform: rotate(-10deg);
+        opacity: 1;
+    }
+    100%{
+        top: -100px;
+        opacity: 1;
+        transform: rotate(20deg)
+    }
+}
+.baloon2{
+    height: 400px;
+    width: 350px;
+    transform: rotate(0deg);
+    opacity: 0;
+    position: absolute;
+    animation: mbaloon1eanim 15s ease-in-out 13s infinite;
+}
+.baloon3{
+    height: 400px;
+    width: 350px;
+    transform: rotate(0deg);
+    opacity: 0;
+    margin-left: 400px;
+    position: absolute;
+    animation: mbaloon1eanim 15s ease-in-out 13s infinite;
+}
